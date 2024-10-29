@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+
+:root {
+  /* Variáveis */
+  --principal: #75528a;
+  --preto: #333333;
+  --branco: #ffffff;
+  --hover: #996bb4;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--branco);
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.header .flex .logo img {
+  height: 4.5rem;
+}
+
+.header .flex .navbar a {
+  margin-left: 2rem;
+  font-size: 2rem;
+  color: var(--preto)
+}
+
+.header .flex .navbar a:hover {
+  text-decoration: underline;
+  color: var(--principal);
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: var(--preto);
+  cursor: pointer;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: var(--preto);
+  cursor: pointer;
+  display: none;
+}
+
+.casas {
+  margin: auto auto;
+  padding-top: 5rem;
+}
+
+.casa {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.casa .image {
+  margin: auto auto;
+  width: 30rem;
+  height: 30rem;
+}
+
+.casa .image img{
+  width: 100%;
+}
+
+.casa .texto {
+  text-align: left;
+  margin-top: 5rem;
+}
+
+.casa .texto h1 {
+  font-size: 4.5rem;
+  font-family: 'Merienda One', cursive;
+  padding-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--principal);
+  cursor: pointer;
+  color: var(--branco);
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+}
+
+.btn:hover {
+  background-color: var(--hover);
+}
+
